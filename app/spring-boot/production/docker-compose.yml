@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
-  kf-mobile-api:
+  java:
     image: registry.gitlab.com/sarwandria/spring-boot:prod-${GET_COMMIT_HASH}
     logging:
       driver: "json-file"
@@ -9,7 +9,7 @@ services:
         max-size: "50000k"
         max-file: "5"
     ports:
-      - 82:8081
+      - 82:8082
     networks:
       - internal-apps
 
