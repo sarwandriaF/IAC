@@ -9,7 +9,7 @@ services:
         max-size: "50000k"
         max-file: "5"
     ports:
-      - 82:8082
+      - 82:8081
     networks:
       - internal-apps
 
