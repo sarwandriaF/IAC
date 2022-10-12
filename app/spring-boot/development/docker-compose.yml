@@ -12,8 +12,6 @@ services:
       - 81:8081
     networks:
       - internal-apps
-
-
     deploy:
       resources:
         reservations:
