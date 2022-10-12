@@ -1,5 +1,4 @@
 version: '3.7'
-
 services:
   java:
     image: registry.gitlab.com/sarwandria/spring-boot:dev-${GET_COMMIT_HASH}
