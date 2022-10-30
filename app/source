@@ -1,0 +1,129 @@
+{
+    "widgets": [
+        {
+            "height": 6,
+            "width": 6,
+            "y": 0,
+            "x": 0,
+            "type": "metric",
+            "properties": {
+                "view": "timeSeries",
+                "stacked": false,
+                "metrics": [
+                    [ "AWS/VPN", "TunnelState", "TunnelIpAddress", "13.251.69.86" ],
+                    [ "...", "18.136.85.147" ]
+                ],
+                "region": "ap-southeast-1"
+            }
+        },
+        {
+            "height": 7,
+            "width": 14,
+            "y": 6,
+            "x": 0,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/VPN", "TunnelDataIn", "TunnelIpAddress", "13.251.69.86" ],
+                    [ "...", "18.136.85.147" ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-southeast-1",
+                "period": 300,
+                "stat": "Sum"
+            }
+        },
+        {
+            "height": 6,
+            "width": 9,
+            "y": 0,
+            "x": 6,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/VPN", "TunnelDataOut", "TunnelIpAddress", "13.251.69.86" ],
+                    [ "...", "18.136.85.147" ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-southeast-1",
+                "period": 300,
+                "stat": "Sum"
+            }
+        },
+        {
+            "height": 9,
+            "width": 14,
+            "y": 20,
+            "x": 0,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/DRS", "LagDuration", "SourceServerID", "s-9700c0ff980206b84", { "label": "s-9700c0ff980206b84" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-southeast-1",
+                "period": 300,
+                "stat": "Average",
+                "title": "Lag"
+            }
+        },
+        {
+            "height": 7,
+            "width": 14,
+            "y": 13,
+            "x": 0,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "AWS/DRS", "Backlog", "SourceServerID", "s-9700c0ff980206b84", { "label": "s-9700c0ff980206b84" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-southeast-1",
+                "period": 300,
+                "stat": "Average"
+            }
+        },
+        {
+            "height": 8,
+            "width": 11,
+            "y": 29,
+            "x": 0,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "CWAgent", "Memory % Committed Bytes In Use", "InstanceId", "i-09d8ff84d5a892425", "objectname", "Memory", "ImageId", "ami-04fd9ca55428190ad", "InstanceType", "t3.small" ],
+                    [ "...", "i-0817efd8398c83c93", ".", ".", ".", ".", ".", "." ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-southeast-1",
+                "title": "Memory",
+                "period": 300,
+                "stat": "Average"
+            }
+        },
+        {
+            "height": 8,
+            "width": 11,
+            "y": 29,
+            "x": 11,
+            "type": "metric",
+            "properties": {
+                "metrics": [
+                    [ "CWAgent", "LogicalDisk % Free Space", "instance", "C:", "InstanceId", "i-09d8ff84d5a892425", "objectname", "LogicalDisk", "ImageId", "ami-04fd9ca55428190ad", "InstanceType", "t3.small" ],
+                    [ "...", "i-0817efd8398c83c93", ".", ".", ".", ".", ".", "." ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-southeast-1",
+                "title": "C: Disk Free Space",
+                "period": 300,
+                "stat": "Average"
+            }
+        }
+    ]
+}

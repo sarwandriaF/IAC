@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   java-maven:
-    image: registry.gitlab.com/sarwandria/spring-boot:prod-${GET_COMMIT_HASH}
+    image: registry.gitlab.com/sarwandria/simple-java-maven-app:${BUILD_NUMBER}
     logging:
       driver: "json-file"
       options:
